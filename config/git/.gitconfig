@@ -1,0 +1,101 @@
+[user]
+	email = thsisiaavv@proton.me
+	name = Alexis Vallecillo
+
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore_global
+	attributesfile = ~/.gitattributes
+	editor = vim
+	autocrlf = input
+	trustctime = false
+	precomposeunicode = false
+	ignorecase = false
+
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
+    lga = log --graph --oneline --decorate --all
+    lgb = log --graph --oneline --decorate --all --branches
+    lgt = log --graph --oneline --decorate --all --tags
+    lgs = log --graph --oneline --decorate --all --remotes
+    lgr = log --graph --oneline --decorate --all --remotes=origin
+    lgrh = log --graph --oneline --decorate --all --remotes=heroku
+    lgrb = log --graph --oneline --decorate --all --remotes=bitbucket
+    lgrg = log --graph --oneline --decorate --all --remotes=github
+    lgrs = log --graph --oneline --decorate --all --remotes=staging
+    lgrd = log --graph --oneline --decorate --all --remotes=dev
+    lgrm = log --graph --oneline --decorate --all --remotes=master
+    lgrt = log --graph --oneline --decorate --all --remotes=test
+    lgru = log --graph --oneline --decorate --all --remotes=upstream
+    lgrv = log --graph --oneline --decorate --all --remotes=vendor
+    lgrw = log --graph --oneline --decorate --all --remotes=web
+    lgrx = log --graph --oneline --decorate --all --remotes=production
+    lgrz = log --graph --oneline --decorate --all --remotes=staging
+    lgrf = log --graph --oneline --decorate --all --remotes=feature
+    lgrd = log --graph --oneline --decorate --all --remotes=dev
+    lgrh = log --graph --oneline --decorate --all --remotes=heroku
+    lgrm = log --graph --oneline --decorate --all --remotes=master
+    lgrs = log --graph --oneline --decorate --all --remotes=staging
+    lgrt = log --graph --oneline --decorate --all --rem
+
+[push]
+    default = simple
+
+[merge]
+    tool = vimdiff
+
+[color "branch"]
+    current = green bold
+    local = green
+    remote = yellow
+
+[color "diff"]
+    frag = magenta
+    meta = yellow
+
+    new = green
+    old = red
+
+    newMoved = cyan
+    oldMoved = blue
+
+[color "status"]
+    added = green reverse
+    changed = yellow reverse
+    untracked = red reverse
+
+[apply]
+	# Detect whitespace errors when applying a patch
+	whitespace = fix
+
+[commit]
+	gpgsign = true
+
+[tag]
+	gpgsign = true
+
+[pull]
+	rebase = true
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[init]
+	defaultBranch = main
+
+[diff]
+    tool = vimdiff
+    compactionHeuristic = true
+    indentHeuristic = true
+
+[difftool]
+	prompt = false
+
