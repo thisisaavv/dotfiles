@@ -9,6 +9,9 @@ return require('packer').startup(function(use)
             require('Comment').setup()
         end
     }
+    use { 'rebelot/kanagawa.nvim' }
+    use { 'ellisonleao/gruvbox.nvim' }
+    use { 'nyoom-engineering/nyoom.nvim' }
     use {
         "NvChad/nvterm",
         config = function ()
@@ -28,6 +31,7 @@ return require('packer').startup(function(use)
             ts_update()
         end,
     }
+    use("github/copilot.vim")
     use('nvim-treesitter/playground')
     use("theprimeagen/harpoon")
     use("mbbill/undotree")
@@ -47,7 +51,6 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},     -- Required
         }
     }
-    use("github/copilot.vim")
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
