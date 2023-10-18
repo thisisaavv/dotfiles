@@ -22,3 +22,5 @@ vim.opt.incsearch = true
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "no"
+
+vim.opt.clipboard=unnamedplus

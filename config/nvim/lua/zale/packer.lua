@@ -11,6 +11,10 @@ return require('packer').startup(function(use)
     }
     use { 'rebelot/kanagawa.nvim' }
     use { 'ellisonleao/gruvbox.nvim' }
+    use { 'bluz71/vim-nightfly-colors' }
+    use { "catppuccin/nvim", as = "catppuccin" }
+    use { "savq/melange-nvim" }
+    use { 'kvrohit/mellow.nvim' }
     use { 'nyoom-engineering/nyoom.nvim' }
     use {
         "NvChad/nvterm",
